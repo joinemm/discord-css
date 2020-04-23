@@ -1,7 +1,7 @@
 /**
  * @name Solarized Dark
  * @author Joinemm#7184
- * @version 1.0.0
+ * @version 1.0.1
  * @description Solarized color scheme originally by Ethan Schnoover
  * @source https://github.com/joinemm/betterdiscord-solarized-dark
 */
@@ -12,7 +12,6 @@
     --background-secondary-alt: #073642;
     --background-tertiary: #002b36;
     --channeltextarea-background: #073642;
-    --background-mentioned: #6c71c470;
     --text-normal: #93a1a1;
     --text-muted: #586e75;
     --channels-default: #93a1a1;
@@ -21,17 +20,19 @@
     --interactive-active: #eee8d5;
     --interactive-muted: #586e75;
     --header-secondary: #93a1a1;
+    --background-mentioned: #cc4b143d;
+    --background-mentioned-hover: #cc4b1450;
 }
 
 /* mentions */
 .mentioned-xhSam7:before {
-    background-color: #6c71c4;
+    background-color: #cc4b14;
 }
 
 /* Popout / menu colors. */
 .da-popouts .da-container, .da-friendsTableHeader, .da-friendsTable, .da-autocomplete, .da-themedPopout, .da-footer, .da-userPopout > *, .da-autocompleteHeaderBackground {
-  background-color: var(--background-secondary) !important;
-  border-color: transparent !important;
+    background-color: var(--background-secondary) !important;
+    border-color: transparent !important;
 }
 
 .theme-dark .da-messageGroupWrapper, .theme-dark .bodyInner-245q0L, .theme-dark .footer-1fjuF6, .tabBody-3YRQ8W{
@@ -44,7 +45,7 @@
 
 /* Each individual item in popouts has a slight gradient - we clear it here. */
 .theme-dark .da-option:after {
-  background-image: none !important;
+    background-image: none !important;
 }
 
 /* Force BetterDiscord settings items to match normal settings items. */
@@ -83,15 +84,8 @@
     border-color: rgba(0,0,0,0) !important;
 }
 
-/* code font */
-code {
-    font-family: Fira Code !important;
-}
-
 /* Make code blocks use solarized syntax highlighting
-
-Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
-
+ * Original Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
 */
 
 .hljs {
