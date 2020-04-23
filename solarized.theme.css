@@ -1,0 +1,175 @@
+/**
+ * @name Solarized Dark
+ * @author Joinemm#7184
+ * @version 1.0.0
+ * @description Solarized color scheme originally by Ethan Schnoover
+ * @source https://github.com/joinemm/betterdiscord-solarized-dark
+*/
+
+:root {
+    --background-primary: #002b36;
+    --background-secondary: #073642;
+    --background-secondary-alt: #073642;
+    --background-tertiary: #002b36;
+    --channeltextarea-background: #073642;
+    --background-mentioned: #6c71c470;
+    --text-normal: #93a1a1;
+    --text-muted: #586e75;
+    --channels-default: #93a1a1;
+    --interactive-normal: #839496;
+    --interactive-hover: #eee8d5;
+    --interactive-active: #eee8d5;
+    --interactive-muted: #586e75;
+    --header-secondary: #93a1a1;
+}
+
+/* mentions */
+.mentioned-xhSam7:before {
+    background-color: #6c71c4;
+}
+
+/* Popout / menu colors. */
+.da-popouts .da-container, .da-friendsTableHeader, .da-friendsTable, .da-autocomplete, .da-themedPopout, .da-footer, .da-userPopout > *, .da-autocompleteHeaderBackground {
+  background-color: var(--background-secondary) !important;
+  border-color: transparent !important;
+}
+
+.theme-dark .da-messageGroupWrapper, .theme-dark .bodyInner-245q0L, .theme-dark .footer-1fjuF6, .tabBody-3YRQ8W{
+    background-color: var(--background-primary) !important;
+}
+
+.theme-dark .inset-3sAvek, .theme-dark .quickMessage-1yeL4E {
+    background-color: var(--background-secondary) !important;
+}
+
+/* Each individual item in popouts has a slight gradient - we clear it here. */
+.theme-dark .da-option:after {
+  background-image: none !important;
+}
+
+/* Force BetterDiscord settings items to match normal settings items. */
+.theme-dark #bd-settings-sidebar .ui-tab-bar-item {
+    color: var(--interactive-normal);
+}
+
+/* Recolor BD settings headers, Nitro settings item and Add Channel icon */
+.theme-dark #bd-settings-sidebar .ui-tab-bar-header, div[style*="color: rgb(114, 137, 218);"], .da-addButtonIcon  {
+    color: var(--channels-default) !important;
+}
+
+/* Force BetterDiscord *active* settings items to match normal active settings items. */
+.theme-dark #bd-settings-sidebar .ui-tab-bar-item.selected, .theme-dark .da-autocompleteRow .da-selectorSelected {
+    background-color: var(--background-modifier-selected);
+    color: var(--interactive-active);
+}
+
+/* Recolor scrollbar track. */
+.da-messagesWrapper .da-scroller::-webkit-scrollbar,
+.da-messagesWrapper .da-scroller::-webkit-scrollbar-track-piece {
+    background-color: var(--background-tertiary) !important;
+    border-color: rgba(0,0,0,0) !important;
+}
+
+/* Recolor scrollbar thumbs. */
+.da-scrollerThemed .da-scroller::-webkit-scrollbar-thumb,
+.da-scrollerWrap .da-scroller::-webkit-scrollbar-thumb {
+    background-color: var(--background-secondary) !important;
+    border-color: var(--background-tertiary) !important;
+}
+
+/* friends list scrollbar background */
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
+    background-color: var(--background-primary) !important;
+    border-color: rgba(0,0,0,0) !important;
+}
+
+/* code font */
+code {
+    font-family: Fira Code !important;
+}
+
+/* Make code blocks use solarized syntax highlighting
+
+Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #002b36;
+  color: #839496;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #586e75;
+}
+
+/* Solarized Green */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition {
+  color: #859900;
+}
+
+/* Solarized Cyan */
+.hljs-number,
+.hljs-string,
+.hljs-meta .hljs-meta-string,
+.hljs-literal,
+.hljs-doctag,
+.hljs-regexp {
+  color: #2aa198;
+}
+
+/* Solarized Blue */
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #268bd2;
+}
+
+/* Solarized Yellow */
+.hljs-attribute,
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class .hljs-title,
+.hljs-type {
+  color: #b58900;
+}
+
+/* Solarized Orange */
+.hljs-symbol,
+.hljs-bullet,
+.hljs-subst,
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-link {
+  color: #cb4b16;
+}
+
+/* Solarized Red */
+.hljs-built_in,
+.hljs-deletion {
+  color: #dc322f;
+}
+
+.hljs-formula {
+  background: #073642;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
