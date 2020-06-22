@@ -11,6 +11,7 @@
     --background-secondary: #073642;
     --background-secondary-alt: #073642;
     --background-tertiary: #002b36;
+    --background-accent: #839496;
     --channeltextarea-background: #073642;
     --text-normal: #93a1a1;
     --text-muted: #586e75;
@@ -82,6 +83,11 @@
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
     background-color: var(--background-primary) !important;
     border-color: rgba(0,0,0,0) !important;
+}
+
+/* pop up bar */
+.barButtonBase-3UKlW2 {
+    color: var(--background-primary);
 }
 
 /* Make code blocks use solarized syntax highlighting
