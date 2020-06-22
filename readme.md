@@ -1,3 +1,4 @@
-To use, move (or hard link) `solarized.theme.css` to `~/.config/BetterDiscord/themes/`
+My custom discord css.
+Solarized colorscheme, Fira Code font, and some compact mode tweaks
 
 ![screenshot](/screenshot.png)
