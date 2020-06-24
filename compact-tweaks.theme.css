@@ -5,6 +5,8 @@
  * @description Better compact mode, looks more like IRC
 */
 
+/* make compact mode more compact *
+ * ------------------------------ */
 .compact-T3H92H.wrapper-2a6GCs {
     padding-top: 0;
     padding-bottom: 0;
@@ -20,4 +22,8 @@
     margin-left: -100px;
     padding-left: 120px;
     text-indent: calc(-100px - -1rem);
+}
+
+.container-3npvBV {
+    top: -10px;
 }

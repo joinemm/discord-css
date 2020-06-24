@@ -2,7 +2,7 @@
  * @name Joinemm's Theme
  * @author Joinemm#7184
  * @version 1.1.0
- * @description Combines all my themes in one file (for ED)
+ * @description All my css changes in one file (for ED)
  * @source https://github.com/joinemm/discord-css
 */
 
@@ -25,12 +25,36 @@
     --background-mentioned: #cc4b143d;
     --background-mentioned-hover: #cc4b1450;
     --background-floating: #002832;
-    --scrollbar-thin-thumb: #073642;
-    --scrollbar-auto-scrollbar-color-thumb: #073642;
-    --main-font: Fira Code
+    --main-font: Fira Code;
 }
 
-/* change font */
+
+/* make compact mode more compact *
+ * ------------------------------ */
+.compact-T3H92H.wrapper-2a6GCs {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+
+.compact-T3H92H .timestamp-3ZCmNB {
+    font-size: inherit;
+    width: auto;
+}
+
+.compact-T3H92H .contents-2mQqc9 {
+    margin-left: -100px;
+    padding-left: 120px;
+    text-indent: calc(-100px - -1rem);
+}
+
+.container-3npvBV {
+    top: -10px;
+}
+
+
+/* font config *
+ * ----------- */
 ::placeholder, body, button, input, select, textarea {
     font-family: var(--main-font);
 }
@@ -39,6 +63,9 @@ code {
     font-family: var(--main-font);
     font-size: 1rem !important;
 }
+
+/* Main Theme *
+ * ---------- */
 
 /* hide nitro gift button */
 .button-38aScr[aria-label="Send a gift"] {
@@ -123,24 +150,44 @@ code {
     color: var(--background-primary);
 }
 
-/* better compact mode */
-.compact-T3H92H.wrapper-2a6GCs {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
+/* autocompletion popup */
+.theme-dark .autocomplete-1vrmpx {
+    background-color: var(--background-secondary);
 }
 
-.compact-T3H92H .timestamp-3ZCmNB {
-    font-size: inherit;
-    width: auto;
+.theme-dark .selectorSelected-1_M1WV {
+    background-color: var(--background-accent);
 }
 
-.compact-T3H92H .contents-2mQqc9 {
-    margin-left: -100px;
-    padding-left: 120px;
-    text-indent: calc(-100px - -1rem);
+/* search */
+.theme-dark .container-3ayLPN {
+    background-color: var(--background-tertiary);
 }
 
+.theme-dark .option-96V44q:after {
+    display: none;
+}
+
+.theme-dark .option-96V44q.selected-rZcOL- {
+    background-color: var(--background-floating);
+}
+
+.searchBar-3dMhjb {
+    background-color: var(--background-secondary);
+}
+
+.theme-dark .searchAnswer-3Dz2-q, .theme-dark .searchFilter-2ESiM3 {
+    background-color: var(--background-accent);
+}
+
+/* user cards */
+.theme-dark .headerNormal-T_seeN {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .body-3iLsc4 {
+    background-color: var(--background-secondary);
+}
 
 /* Make code blocks use solarized syntax highlighting
  * Original Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
