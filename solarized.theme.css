@@ -25,6 +25,11 @@
     --background-mentioned-hover: #cc4b1450;
 }
 
+/* hide nitro gift button */
+.button-38aScr[aria-label="Send a gift"] {
+    display: none
+}
+
 /* mentions */
 .mentioned-xhSam7:before {
     background-color: #cc4b14;
@@ -79,6 +84,19 @@
     border-color: var(--background-tertiary) !important;
 }
 
+/* more scroller theming */
+.scroller-2FKFPG::-webkit-scrollbar {
+    background: transparent;
+}
+
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    background-color: var(--background-secondary);
+}
+
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
+    background-color: var(--background-secondary);
+}
+
 /* friends list scrollbar background */
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
     background-color: var(--background-primary) !important;
@@ -88,6 +106,45 @@
 /* pop up bar */
 .barButtonBase-3UKlW2 {
     color: var(--background-primary);
+}
+
+/* autocompletion popup */
+.theme-dark .autocomplete-1vrmpx {
+    background-color: var(--background-secondary);
+}
+
+.theme-dark .selectorSelected-1_M1WV {
+    background-color: var(--background-accent);
+}
+
+/* search */
+.theme-dark .container-3ayLPN {
+    background-color: var(--background-tertiary);
+}
+
+.theme-dark .option-96V44q:after {
+    display: none;
+}
+
+.theme-dark .option-96V44q.selected-rZcOL- {
+    background-color: var(--background-floating);
+}
+
+.searchBar-3dMhjb {
+    background-color: var(--background-secondary);
+}
+
+.theme-dark .searchAnswer-3Dz2-q, .theme-dark .searchFilter-2ESiM3 {
+    background-color: var(--background-accent);
+}
+
+/* user cards */
+.theme-dark .headerNormal-T_seeN {
+    background-color: var(--background-primary);
+}
+
+.theme-dark .body-3iLsc4 {
+    background-color: var(--background-secondary);
 }
 
 /* Make code blocks use solarized syntax highlighting
@@ -172,4 +229,3 @@
 .hljs-strong {
   font-weight: bold;
 }
-
