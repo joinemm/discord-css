@@ -80,7 +80,7 @@ code {
 .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
 .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track,
 .theme-dark .da-messageGroupWrapper, .theme-dark .bodyInner-245q0L, .theme-dark .footer-1fjuF6, .tabBody-3YRQ8W,
-.barButtonBase-3UKlW2, .theme-dark .bottomDivider-1K9Gao, .theme-dark .headerNormal-T_seeN, .theme-dark .root-1gCeng {
+.theme-dark .bottomDivider-1K9Gao, .theme-dark .headerNormal-T_seeN, .theme-dark .root-1gCeng {
     background-color: var(--background-primary);
 }
 
@@ -162,7 +162,7 @@ code {
 }
 
 /* misc */
-.scroller-2FKFPG::-webkit-scrollbar,
+.scroller-2FKFPG::-webkit-scrollbar, .barButtonBase-3UKlW2,
 .theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scroller-2FKFPG::-webkit-scrollbar-thumb {
     background: transparent;
 }
