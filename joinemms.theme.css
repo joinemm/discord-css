@@ -1,7 +1,7 @@
 /**
  * @name Joinemm's Theme
  * @author Joinemm#7184
- * @version 1.1.0
+ * @version 1.2
  * @description All my css changes in one file (for ED)
  * @source https://github.com/joinemm/discord-css
 */
@@ -29,9 +29,8 @@
     --scrollbar-auto-thumb: #073642;
     --scrollbar-auto-track: #002b36;
     --text-link: #268bd2;
-    --main-font: Fira Code;
+    --main-font: Fira Code, Twemoji;
 }
-
 
 /* make compact mode more compact *
  * ------------------------------ */
@@ -67,6 +66,21 @@ code {
     font-size: 1rem !important;
 }
 
+/* zoom emoji on hover *
+ * ------------------- */
+.compact-T3H92H .messageContent-2qWWxC .emoji {
+    z-index: 2;
+    transition: transform .2s;
+}
+
+.compact-T3H92H .messageContent-2qWWxC .emoji:hover {
+    transform: scale(3.0);
+}
+
+.zalgo-jN1Ica.compact-T3H92H .contents-2mQqc9 {
+    overflow: visible;
+}
+
 /* Main Theme *
  * ---------- */
 
@@ -75,15 +89,17 @@ code {
     display: none
 }
 
+/* primary background elements */
 .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
 .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track,
 .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
 .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track,
-.theme-dark .da-messageGroupWrapper, .theme-dark .bodyInner-245q0L, .theme-dark .footer-1fjuF6, .tabBody-3YRQ8W,
-.theme-dark .bottomDivider-1K9Gao, .theme-dark .headerNormal-T_seeN, .theme-dark .root-1gCeng {
+.theme-dark .da-messageGroupWrapper, .theme-dark .bodyInner-245q0L, .theme-dark .footer-1fjuF6,
+.theme-dark .bottomDivider-1K9Gao, .theme-dark .headerNormal-T_seeN, .theme-dark .root-1gCeng, .tabBody-3YRQ8W {
     background-color: var(--background-primary);
 }
 
+/* lighter elements */
 .da-popouts .da-container, .da-friendsTableHeader, .da-friendsTable, .da-autocomplete,
 .da-themedPopout, .da-footer, .da-userPopout > *, .da-autocompleteHeaderBackground,
 .theme-dark .bar-2Qqk5Z, .theme-dark .payment-xT17Mq, .theme-dark .paymentPane-3bwJ6A,
@@ -99,16 +115,6 @@ code {
 .wrapper-2aW0bm, .theme-dark .autocomplete-1vrmpx, .searchBar-3dMhjb,
 .theme-dark .body-3iLsc4, .theme-dark .footer-2gL1pp, .cardPrimary-1Hv-to {
     background-color: var(--background-secondary);
-}
-
-/* Force BetterDiscord settings items to match normal settings items. */
-.theme-dark #bd-settings-sidebar .ui-tab-bar-item {
-    color: var(--interactive-normal);
-}
-
-/* Recolor BD settings headers, Nitro settings item and Add Channel icon */
-.theme-dark #bd-settings-sidebar .ui-tab-bar-header, .da-addButtonIcon  {
-    color: var(--channels-default) !important;
 }
 
 /* Force BetterDiscord *active* settings items to match normal active settings items. */
@@ -197,9 +203,9 @@ div[style*="color: rgb(114, 137, 218);"] {
 div[style*="color: rgb(255, 255, 255);"] {
     color: #ffffff !important;
 }
+
 /* Make code blocks use solarized syntax highlighting
- * Original Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
-*/
+ * Original Style from ethanschoonover.com/solarized */
 
 .hljs {
   display: block;
