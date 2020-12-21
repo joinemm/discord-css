@@ -1,4 +1,4 @@
 My custom discord css.
-Solarized colorscheme, Fira Code font, and some compact mode tweaks
+Nord colors, Hack font, moved buttons around.
 
-![screenshot](/screenshot.png)
+[Screenshot](screenshot.png)
