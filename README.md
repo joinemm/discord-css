@@ -1,5 +1,5 @@
-My custom discord css for use with EnhancedDiscord.
+Nord theme for discord.
 
-Nord colors, Hack font, emoji and gif buttons on the left side.
+Install using EnhancedDiscord or BetterDiscord.
 
 ![Screenshot](screenshot.png)
