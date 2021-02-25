@@ -1,0 +1,138 @@
+/*  
+    Discord nord (c) Joinemm 2020 
+    https://github.com/joinemm/discord-css
+*/
+
+ :root {
+    --background-primary: #2e3440;
+    --background-secondary: #323846;
+    --background-secondary-alt: #323846;
+    --background-tertiary: #3b4252;
+    --background-accent: #3b4252;
+    --channeltextarea-background: #3b4252;
+    --text-normal: #eceff4;
+    --text-muted: #67748e;
+    --channels-default: #8b94a8;
+    --interactive-normal: #d8dee9;
+    --interactive-hover: #eceff4;
+    --interactive-active: #eceff4;
+    --interactive-muted: #4c566a;
+    --header-secondary: #eceff4;
+    --background-floating: #3b4252;
+    --scrollbar-auto-thumb: #3b4252;
+    --scrollbar-auto-track: #2e3440;
+    --text-link: #88c0d0;
+    --selection: #5c688080;
+}
+
+.scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
+.scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track,
+.theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
+.theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track,
+.theme-dark .da-messageGroupWrapper,
+.theme-dark .bodyInner-245q0L,
+.theme-dark .bottomDivider-1K9Gao,
+.theme-dark .headerNormal-T_seeN,
+.theme-dark .root-1gCeng,
+.tabBody-3YRQ8W,
+.theme-dark .container-1D34oG
+.theme-dark .uploadModal-2ifh8j,
+.theme-dark .modal-yWgWj- {
+    background-color: var(--background-primary);
+}
+
+.da-popouts .da-container,
+.da-friendsTableHeader,
+.da-friendsTable,
+.da-autocomplete,
+.da-themedPopout,
+.da-footer,
+.da-userPopout>*,
+.da-autocompleteHeaderBackground,
+.theme-dark .bar-2Qqk5Z,
+.theme-dark .payment-xT17Mq,
+.theme-dark .paymentPane-3bwJ6A,
+.theme-dark .paginator-166-09,
+.theme-dark .codeRedemptionRedirect-1wVR4b,
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb,
+.theme-dark .footer-3mqk7D,
+.theme-dark .footer-2gL1pp,
+.scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb,
+.theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb,
+.theme-dark .inset-3sAvek,
+.theme-dark .quickMessage-1yeL4E,
+.wrapper-2aW0bm,
+.theme-dark .autocomplete-1vrmpx,
+.searchBar-3dMhjb,
+.theme-dark .body-3iLsc4,
+.theme-dark .footer-2gL1pp,
+.theme-dark .footer-1fjuF6,
+.cardPrimary-1Hv-to {
+    background-color: var(--background-secondary);
+}
+
+::selection {
+    background: var(--selection);
+}
+
+/* scrollbars */
+.da-messagesWrapper .da-scroller::-webkit-scrollbar,
+.da-messagesWrapper .da-scroller::-webkit-scrollbar-track-piece {
+    background-color: var(--background-tertiary) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.da-scrollerThemed .da-scroller::-webkit-scrollbar-thumb,
+.da-scrollerWrap .da-scroller::-webkit-scrollbar-thumb {
+    background-color: var(--background-secondary) !important;
+    border-color: var(--background-tertiary) !important;
+}
+
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
+    background-color: var(--background-primary) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.theme-dark .selectorSelected-1_M1WV,
+.newMessagesBar-mujexs,
+.theme-dark .searchAnswer-3Dz2-q,
+.theme-dark .searchFilter-2ESiM3,
+.theme-dark .progress-1IcQ3A,
+.themeDefault-24hCdX,
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+    background-color: var(--background-accent);
+}
+
+.theme-dark .container-3ayLPN {
+    background-color: var(--background-tertiary);
+}
+
+.theme-dark .option-96V44q.selected-rZcOL- {
+    background-color: var(--background-floating);
+}
+
+.theme-dark .pageIndicator-1gAbyA,
+.theme-dark .pageButtonNext-V2kUq0,
+.theme-dark .pageButtonPrev-1Y-47D {
+    border-color: var(--background-accent);
+}
+
+.scroller-2FKFPG::-webkit-scrollbar,
+.barButtonBase-3UKlW2,
+.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/* remove gradients */
+
+.theme-dark .da-option:after {
+    background-image: none !important;
+}
+
+/* hide that stupid nitro gift button */
+
+.button-38aScr[aria-label="Send a gift"] {
+    display: none
+}
+
+@import url("https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css")
