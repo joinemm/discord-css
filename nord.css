@@ -51,7 +51,9 @@
 .theme-dark .uploadModal-2ifh8j,
 .theme-dark .modal-yWgWj-,
 .uploadModal-2ifh8j,
-.theme-dark .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
+.theme-dark .emojiAliasInput-1y-NBz .emojiInput-1aLNse,
+.theme-dark .selected-1Tbx07,
+.theme-dark .option-96V44q.selected-rZcOL- {
     background-color: var(--background-primary) !important;
 }
 
@@ -140,17 +142,11 @@
 }
 
 /* remove gradients */
-
 .theme-dark .da-option:after, .theme-dark .option-96V44q:after {
     background-image: none !important;
 }
 
-/* search */
-
-.theme-dark .option-96V44q.selected-rZcOL- {
-    background-color: var(--background-primary);
-}
-
+/* search text */
 .theme-dark .searchOption-zQ-1l6 .answer-1n6g43,
 .theme-dark .option-96V44q .filter-3Y_im- {
     color: var(--text-muted)
@@ -159,14 +155,16 @@
     color: var(--text-normal)
 }
 
-/* side panel bottom section */
-
+/* side panel bottom section border */
 .panels-j1Uci_ {
-    border-top: 2px solid var(--background-primary);
+    border-top: 2px solid var(--background-modifier-accent);
+}
+
+.container-1giJp5 {
+    border-width: 2px;
 }
 
 /* hide that stupid nitro gift button */
-
 .button-38aScr[aria-label="Send a gift"] {
     display: none
 }
