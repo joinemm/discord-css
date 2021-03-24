@@ -25,6 +25,11 @@
     --selection: #5c688080;
 }
 
+/* hide blocked messages */
+[class="groupStart-23k01U"] {
+	display: none;
+}
+
 /* enhanceddiscord server count text */
 .theme-dark .keybind-KpFkfr {
     color: var(--channels-default)
@@ -166,7 +171,7 @@
 
 /* hide that stupid nitro gift button */
 .button-38aScr[aria-label="Send a gift"] {
-    display: none
+    display: none;
 }
 
 @import url("https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css")
