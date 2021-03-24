@@ -1,9 +1,10 @@
 /*  
-    Discord nord (c) Joinemm 2020 
+    Discord Nord (c) Joinemm#7184 2020-2021
     https://github.com/joinemm/discord-css
 */
 
- :root {
+/* define colors */
+:root {
     --background-primary: #2e3440;
     --background-secondary: #323846;
     --background-secondary-alt: #323846;
@@ -25,23 +26,7 @@
     --selection: #5c688080;
 }
 
-/* hide blocked messages */
-[class="groupStart-23k01U"] {
-	display: none;
-}
-
-/* enhanceddiscord server count text */
-.theme-dark .keybind-KpFkfr {
-    color: var(--channels-default)
-}
-
-/* unloaded emojis */
-.theme-dark .imageLoading-bpSr0M {
-    background-image: none;
-    background: var(--background-primary);
-    border-radius: 50%;
-}
-
+/* main backgrounds */
 .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
 .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track,
 .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
@@ -92,10 +77,6 @@
 .theme-dark .card-FDVird:before,
 .theme-dark .colorPickerCustom-2CWBn2 {
     background-color: var(--background-secondary);
-}
-
-::selection {
-    background: var(--selection);
 }
 
 /* scrollbars */
@@ -156,6 +137,7 @@
 .theme-dark .option-96V44q .filter-3Y_im- {
     color: var(--text-muted)
 }
+
 .theme-dark .searchOption-zQ-1l6 .filter-3Y_im- {
     color: var(--text-normal)
 }
@@ -169,9 +151,32 @@
     border-width: 2px;
 }
 
+/* selected text */
+::selection {
+    background: var(--selection);
+}
+
 /* hide that stupid nitro gift button */
 .button-38aScr[aria-label="Send a gift"] {
     display: none;
 }
 
+/* hide blocked messages */
+[class="groupStart-23k01U"] {
+	display: none;
+}
+
+/* enhanceddiscord server count text */
+.theme-dark .keybind-KpFkfr {
+    color: var(--channels-default)
+}
+
+/* unloaded emojis */
+.theme-dark .imageLoading-bpSr0M {
+    background-image: none;
+    background: var(--background-primary);
+    border-radius: 50%;
+}
+
+/* import nord syntax highlighting for code blocks */
 @import url("https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css")
